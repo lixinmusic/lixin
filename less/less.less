@@ -1,0 +1,108 @@
+@import "var.less";
+//清除浮动
+.clear(){
+  &:before,&:after{
+    content: '';
+    clear: both;
+  }
+  &:after{
+    display: block;
+  }
+}
+.container{
+  &{
+    width:@num1*1-100px;
+    height:auto;margin:0 auto;
+  }
+  &>.row{
+    width:100%;height:auto;
+    .clear()
+  }
+  &-fluid{
+    width:100%;
+    height:auto;
+  }
+  &-fluid>.row{
+    width:100%;height:auto;
+    .clear()
+  }
+}
+
+.response(@type:s,@i:1,@cols:12) when (@i<@cols){
+  .container>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@cols*100%;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    float:left;
+    height:150px;
+    width:@i/@cols*100%;
+  }
+  .col-@{type}-offsetl-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .col-@{type}-offsetr-@{i}{
+    left:@i/@cols*100%;
+  }
+  .response(@type,@i+1);
+}
+
+.response();
+.response(xs,1,10);
+
+.offset(@type:s,@i:1,@cols:12) when (@i<@cols){
+  .col-@{type}-offsetl-@{i}{
+    left:0;
+  }
+  .col-@{type}-offsetr-@{i}{
+    left:0;
+  }
+  .offset(@type,@i+1);
+}
+.col-l-hide{
+  display: block;
+}
+.col-m-hide{
+  display: block;
+}
+.col-s-hide{
+  display: none;
+}
+
+@media screen and (min-width:@num1){
+  .container{
+    width:@num1;
+  }
+  .offset(s);
+  .offset(l);
+  .response(m);
+  .response(xl,1,10);
+.col-l-hide{
+    display: block;
+  }
+.col-s-hide{
+    display: block;
+  }
+.col-m-hide{
+    display: none;
+  }
+}
+
+@media screen and (min-width:@num2){
+.container{
+  width:@num2;
+}
+  .offset(s);
+  .offset(m);
+  .response(l);
+  .response(xl,1,10);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}

@@ -1,0 +1,265 @@
+/*从下面出来*/
+@keyframes ups {
+    0%{
+        opacity: 0;
+        transform: translate(0,500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes upl {
+    0%{
+        opacity: 0;
+        transform: translate(0,1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes ziwo {
+    0%{
+        opacity: 0;
+        transform: translate(0,1000px) scale(1,1);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(0,0) scale(1,1);
+    }
+    80%{
+        opacity: 1;
+        transform: translate(0,0) scale(1.2,1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0) scale(1,1);
+    }
+}
+/*从上面出来*/
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translate(0,-1100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+/*从左边出来*/
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translate(-1100px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes right1{
+    0%{
+        opacity: 0;
+        transform: translate(-1100px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-20px,0);
+    }
+}
+/*从右边出来*/
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translate(1100px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+/*从左下出来*/
+@keyframes righttop{
+    0%{
+        opacity: 0;
+        transform: translate(-1100px,1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+/*缩放*/
+@keyframes suofang {
+    0%{
+        opacity: 0;
+        transform: scale(0.1,0.1);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1,1);
+    }
+}
+@keyframes suofangs {
+    0%{
+        opacity: 0;
+        transform: scale(0.1,0.1);
+    }
+    85%{
+        opacity:1;
+        transform: scale(1,1);
+    }
+    93%{
+        opacity:1;
+        transform: scale(0.8,0.8);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1,1);
+    }
+}
+/*显示*/
+@keyframes xianshi {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*旋转*/
+@keyframes rotate {
+    0%{
+        opacity: 0;
+        transform:translate(-1000px,1000px) rotate(360deg);
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0,0) rotate(0deg);
+    }
+}
+@keyframes rotatel {
+    0%{
+        opacity: 0;
+        transform:translate(1000px,1000px) rotate(360deg);
+    }
+    100%{
+        opacity: 1;
+        transform:translate(0,0) rotate(0deg);
+    }
+}
+@keyframes rotateX {
+    0%{
+        opacity: 0;
+        transform:rotateX(720deg);
+    }
+    100%{
+        opacity: 1;
+        transform:rotateX(0deg);
+    }
+}
+@keyframes first {
+    0%{
+        opacity: 0;
+        transform: rotate(-360deg) scale(0.1,0.1);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg) scale(1,1);
+    }
+}
+/*飞机*/
+@keyframes feiji {
+    0%{
+        opacity: 0;
+        transform: translate(30px,30px) scale(0.6,0.6);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0) scale(1,1);
+    }
+}
+/*hr*/
+@keyframes hr {
+    0%{
+        opacity: 0;
+        transform:scale(0.1,1)
+    }
+    1%{
+        opacity: 1;
+        transform:scale(0.1,1)
+    }
+    100%{
+        opacity: 1;
+        transform:scale(4,1)
+    }
+}
+@keyframes hr1 {
+    0%{
+        opacity: 0;
+        transform:scale(0.01,1)
+    }
+    1%{
+        opacity: 1;
+        transform:scale(0.01,1)
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1,1)
+    }
+}
+/*third*/
+@keyframes third {
+    0%{
+        opacity: 0;
+        transform:scale(0.9,0.9);
+    }
+    50%{
+        opacity: 1;
+        transform:scale(1,1);
+    }
+    80%{
+        opacity: 1;
+        transform:scale(1.5,1.5);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1,1);
+    }
+}
+/*suoluetu*/
+@keyframes suo2 {
+    0%{
+        transform:translate(-50px,0) rotateY(-90deg);
+    }
+    100%{
+        transform:translate(0,0) rotateY(-90deg);
+    }
+}
+
+@keyframes lianjie1 {
+    0%{
+        transform: translate(-250px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes lianjie2 {
+    0%{
+        transform: translate(-500px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes lianjie3 {
+    0%{
+        transform: translate(-750px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
